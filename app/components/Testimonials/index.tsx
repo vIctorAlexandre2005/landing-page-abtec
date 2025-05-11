@@ -61,7 +61,7 @@ const postData: DataType[] = [
 export default function MultipleItems() {
   return (
     <div className="pt-40 pb-10 sm:pb-32 lg:py-32 bg-gradient-to-r from-blue-500 to-cornflowerblue" id="testimonial">
-      <h1 className="text-center mb-10 text-55xl font-semibold text-white">Veja o que nossos clientes dizem ✨</h1>
+      <h1 className="text-center mb-10 text-55xl font-semibold text-white">Veja a opinião de nossos clientes✨</h1>
       <div className="mx-auto max-w-7xl grid grid-cols-3 sm:py-4 lg:px-8">
         {postData.map((items, i) => (
           <div key={i}>
