@@ -20,8 +20,8 @@ interface DataType {
 
 const postData: DataType[] = [
   {
-    heading: "Formatação e limpeza",
-    heading2: "Troca de peças (HD, SSD, memória)",
+    heading: "• Formatação e limpeza",
+    heading2: "• Troca de peças (HD, SSD, memória)",
     name: "Colt stelle",
     imgSrc: "/assets/services_1.jpg",
     students: 150,
@@ -30,8 +30,8 @@ const postData: DataType[] = [
     rating: 5.0,
   },
   {
-    heading: "Atualização de hardware",
-    heading2: "Instalação de programas e antivírus",
+    heading: "• Atualização de hardware",
+    heading2: "• Instalação de programas e antivírus",
     name: "Colt stelle",
     imgSrc: "/assets/services_2.jpeg",
     students: 130,
@@ -40,8 +40,8 @@ const postData: DataType[] = [
     rating: 5.0,
   },
   {
-    heading: "Reparo de notebooks",
-    heading2: "Recuperação de dados",
+    heading: "• Reparo de notebooks",
+    heading2: "• Recuperação de dados",
     name: "Colt stelle",
     imgSrc: "/assets/services_3.jpg",
     students: 120,
