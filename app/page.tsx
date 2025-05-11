@@ -4,6 +4,7 @@ import Mentor from './components/Mentor/index';
 import Testimonials from './components/Testimonials/index';
 import Newsletter from './components/Newsletter/Newsletter';
 import { Banner } from './components/Banner';
+import WhyAbtec from './components/Mentor/index';
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
       <Banner />
       {/* <Companies /> */}
       <Courses />
-      <Mentor />
+      <WhyAbtec />
       <Testimonials />
       <Newsletter />
     </main>
