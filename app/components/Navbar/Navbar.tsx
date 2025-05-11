@@ -14,11 +14,11 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "Início", href: "#/", current: true },
-  { name: "Serviços", href: "#Serviços", current: false },
-  { name: "Mentor", href: "#mentor", current: false },
-  { name: "Group", href: "/", current: false },
-  { name: "Testimonial", href: "#testimonial", current: false },
+  { name: "Início", href: "#banner", current: true },
+  { name: "Serviços", href: "#courses", current: false },
+  { name: "Por que a ABTEC?", href: "#mentor", current: false },
+  { name: "Avaliações", href: "#testimonial", current: false },
+  { name: "Agendar", href: "#newsletter", current: false },
 ];
 
 function classNames(...classes: string[]) {

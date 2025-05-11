@@ -4,7 +4,7 @@ import { CheckBadgeIcon } from "@heroicons/react/24/outline";
 
 export function Banner() {
   return (
-    <div id="home-section" className="bg-blue-400 w-full">
+    <div id="banner" className="bg-blue-400 w-full">
       <div className="mx-auto pt-10 max-w-full w-full sm:pb-24 px-6">
         <div className="grid grid-cols-1 w-full lg:grid-cols-12 gap-12 space-x-1">
           <div className="col-span-6 w-full flex flex-col justify-evenly">
