@@ -15,141 +15,95 @@ interface DataType {
 
 const postData: DataType[] = [
   {
-    name: "Robert Fox",
-    profession: "CEO, Parkview Int.Ltd",
+    name: "Tony Nascimento",
+    profession: "Cliente da Abtec",
     comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/testimonial/user.svg",
+      "Profissional sério, super atencioso, honesto e com um excelente serviço! Recomendo a todos!",
+    imgSrc: "/avaliacoes/tony_nascimento.png",
   },
   {
-    name: "Leslie Alexander",
-    profession: "CEO, Parkview Int.Ltd",
+    name: "Laiza Peres",
+    profession: "Cliente da Abtec",
     comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/mentor/user2.png",
+      "Minha experiência com a Abtec foi maravilhosa! ✨🙏🏻 O Antônio é super prestativo e profissional. Resolveu rápido meu problema na CPU. Agora o próximo trabalho vai ser com meu notebook e, quando meu PC der problema, corro pra ele novamente! Kkkkk Nota 10.000.000",
+    imgSrc: "/avaliacoes/laiza_peres.png",
   },
   {
-    name: "Cody Fisher",
-    profession: "CEO, Parkview Int.Ltd",
+    name: "Daniel Perfeito",
+    profession: "Cliente da Abtec",
     comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/mentor/user3.png",
+      "Recomendo os serviços da Abtec, liderada pelo Abner. A empresa oferece assistência técnica completa para computadores e notebooks, desde hardware até software. Profissionalismo, competência e atendimento de qualidade são marcas registradas da Abtec. Confie seus equipamentos à Abtec e tenha a certeza de um serviço excelente!",
+    imgSrc: "/avaliacoes/daniel.png",
   },
   {
-    name: "Robert Fox",
-    profession: "CEO, Parkview Int.Ltd",
-    comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/mentor/user1.png",
+    name: "Emily Pimenta",
+    profession: "Cliente da Abtec",
+    comment: "Trabalho impecável! Recomendo muito!",
+    imgSrc: "/avaliacoes/emily.png",
   },
   {
-    name: "Leslie Alexander",
-    profession: "CEO, Parkview Int.Ltd",
+    name: "Claudenise",
+    profession: "Cliente da Abtec",
     comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/mentor/user2.png",
+      "Maravilhoso esse serviço, super indico! Confie de olhos fechados. Nota 10.000 ❤️",
+    imgSrc: "/avaliacoes/claudenise.png",
   },
   {
-    name: "Cody Fisher",
-    profession: "CEO, Parkview Int.Ltd",
-    comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/mentor/user3.png",
+    name: "André Silva",
+    profession: "Cliente da Abtec",
+    comment: "Excelente profissional, nota 1.000. Recomendo a todos!",
+    imgSrc: "/avaliacoes/andre_silva.png",
   },
 ];
 
 // CAROUSEL SETTINGS
 
-export default class MultipleItems extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      dotsClass: "slick-dots",
-      infinite: true,
-      slidesToShow: 3,
-      // centerMode: true,
-      slidesToScroll: 2,
-      arrows: false,
-      autoplay: false,
-      speed: 500,
-      autoplaySpeed: 2000,
-      cssEase: "linear",
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-          },
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-          },
-        },
-      ],
-    };
-
-    return (
-      <div className="pt-40 pb-10 sm:pb-32 lg:py-32" id="testimonial">
-        <div className="mx-auto max-w-7xl sm:py-4 lg:px-8">
-          {postData.map((items, i) => (
-            <div key={i}>
-              <div
-                className={`bg-white m-4 p-5 my-20 relative ${
-                  i % 2 ? "middleDiv" : "testimonial-shadow"
-                }`}
-              >
-                <div className="absolute top-[-45px]">
-                  <Image
-                    src={items.imgSrc}
-                    alt={items.imgSrc}
-                    width={100}
-                    height={100}
-                    className="inline-block"
-                  />
+export default function MultipleItems() {
+  return (
+    <div className="pt-40 pb-10 sm:pb-32 lg:py-32 bg-gradient-to-r from-blue-500 to-cornflowerblue" id="testimonial">
+      <h1 className="text-center mb-10 text-55xl font-semibold text-white">Veja o que nossos clientes dizem ✨</h1>
+      <div className="mx-auto max-w-7xl grid grid-cols-3 sm:py-4 lg:px-8">
+        {postData.map((items, i) => (
+          <div key={i}>
+            <div
+              className={`bg-white m-4 p-5 my-20 relative ${
+                i % 2 ? "middleDiv" : "testimonial-shadow"
+              }`}
+            >
+              <div className="absolute top-[-45px]">
+                <Image
+                  src={items.imgSrc}
+                  alt={items.imgSrc}
+                  width={70}
+                  height={70}
+                  className="inline-block object-cover rounded-full p-1 bg-white shadow-md"
+                />
+              </div>
+              <h4 className="text-base font-normal text-darkgray my-4">
+                {items.comment}
+              </h4>
+              <hr style={{ color: "#D7D5D5" }} />
+              <div className="flex justify-between">
+                <div>
+                  <h3 className="text-lg font-medium text-darkbrown pt-4 pb-2">
+                    {items.name}
+                  </h3>
+                  <h3 className="text-sm font-normal text-lightgray pb-2">
+                    {items.profession}
+                  </h3>
                 </div>
-                <h4 className="text-base font-normal text-darkgray my-4">
-                  {items.comment}
-                </h4>
-                <hr style={{ color: "#D7D5D5" }} />
-                <div className="flex justify-between">
-                  <div>
-                    <h3 className="text-lg font-medium text-darkbrown pt-4 pb-2">
-                      {items.name}
-                    </h3>
-                    <h3 className="text-sm font-normal text-lightgray pb-2">
-                      {items.profession}
-                    </h3>
-                  </div>
-                  <div className="flex">
-                    <StarIcon width={20} className="text-gold" />
-                    <StarIcon width={20} className="text-gold" />
-                    <StarIcon width={20} className="text-gold" />
-                    <StarIcon width={20} className="text-gold" />
-                    <StarIcon width={20} className="text-lightgray" />
-                  </div>
+                <div className="flex">
+                  <StarIcon width={20} className="text-gold" />
+                  <StarIcon width={20} className="text-gold" />
+                  <StarIcon width={20} className="text-gold" />
+                  <StarIcon width={20} className="text-gold" />
+                  <StarIcon width={20} className="text-gold" />
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    );
-  }
+    </div>
+  );
 }
