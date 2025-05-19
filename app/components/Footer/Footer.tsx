@@ -18,10 +18,13 @@ interface socialLinks {
   width: number;
 }
 
+const message = "Olá! Gostaria de um atendimento técnico da ABTEC.";
+export const whatsappLink = `https://api.whatsapp.com/send?phone=5521988774292&text=${encodeURIComponent(message)}`;
+
 const socialLinks: socialLinks[] = [
   {
     imgSrc: "https://img.icons8.com/?size=100&id=16713&format=png&color=000000",
-    link: "https://api.whatsapp.com/send?phone=5521980478184",
+    link: whatsappLink,
     width: 32,
   },
   {

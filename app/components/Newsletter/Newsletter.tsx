@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { whatsappLink } from "../Footer/Footer";
 
 const Newsletter = () => {
   return (
@@ -20,7 +21,7 @@ const Newsletter = () => {
                 <div className="text-white w-full justify-center focus-within:text-white flex flex-row-reverse rounded-full pt-5 lg:pt-0">
                   <a
                     type="submit"
-                    href="https://api.whatsapp.com/send?phone=5521980478184"
+                    href={whatsappLink}
                     target="_blank"
                     className="p-3 lg:p-5 w-1/2 text-xl flex gap-2 items-center justify-center text-center font-semibold focus:outline-none focus:shadow-outline bg-kellygreen shadow-lg hover:bg-opacity-80 duration-150 ease-in-out rounded-full"
                   >

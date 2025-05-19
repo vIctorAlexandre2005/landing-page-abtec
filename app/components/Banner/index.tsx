@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { MdOutlineWhatsapp, MdWhatsapp } from "react-icons/md";
 import { CheckBadgeIcon } from "@heroicons/react/24/outline";
+import { whatsappLink } from "../Footer/Footer";
 
 export function Banner() {
   return (
@@ -18,7 +19,7 @@ export function Banner() {
 
             <div className="relative flex justify-center">
               <a
-                href="https://api.whatsapp.com/send?phone=5521980478184"
+                href={whatsappLink}
                 target="_blank"
                 className="p-4 w-auto text-sm md:text-lg shadow-lg mx-3 items-center text-white font-semibold rounded-full flex gap-2 bg-kellygreen hover:bg-opacity-80 duration-150 ease-in-out "
               >
