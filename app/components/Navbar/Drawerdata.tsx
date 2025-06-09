@@ -8,12 +8,12 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'Courses', href: '#courses', current: false },
-  { name: 'Mentor', href: '#mentor', current: false },
-  { name: 'Group', href: '#/', current: false },
-  { name: 'Testimonial', href: '#testimonial', current: false },
-]
+  { name: "Início", href: "#banner", current: true },
+  { name: "Serviços", href: "#courses", current: false },
+  { name: "Por que a ABTEC?", href: "#mentor", current: false },
+  { name: "Avaliações", href: "#testimonial", current: false },
+  { name: "Agendar", href: "#newsletter", current: false },
+];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -39,12 +39,6 @@ const Data = () => {
               </Link>
             ))}
             <div className="mt-4"></div>
-            <button className="bg-white w-full text-Blueviolet border border-semiblueviolet font-medium py-2 px-4 rounded">
-              Log In
-            </button>
-            <button className="bg-semiblueviolet w-full hover:bg-Blueviolet hover:text-white text-Blueviolet font-medium my-2 py-2 px-4 rounded">
-              Sign up
-            </button>
           </div>
         </div>
       </div>

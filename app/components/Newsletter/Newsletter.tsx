@@ -17,12 +17,12 @@ const Newsletter = () => {
               </h3>
 
               <div>
-                <div className="text-white w-full justify-center focus-within:text-white flex flex-row-reverse rounded-full pt-5 lg:pt-0">
+                <div className="text-white w-full max-sm:p-2 justify-center focus-within:text-white flex flex-row-reverse rounded-full pt-5 lg:pt-0">
                   <a
                     type="submit"
                     href={whatsappLink}
                     target="_blank"
-                    className="p-3 lg:p-5 w-1/2 text-xl flex gap-2 items-center justify-center text-center font-semibold focus:outline-none focus:shadow-outline bg-kellygreen shadow-lg hover:bg-opacity-80 duration-150 ease-in-out rounded-full"
+                    className="p-3 lg:p-5 max-sm:w-full sm:w-1/2 text-xl flex gap-2 items-center justify-center text-center font-semibold focus:outline-none focus:shadow-outline bg-kellygreen shadow-lg hover:bg-opacity-80 duration-150 ease-in-out rounded-full"
                   >
                     Agendar agora{" "}
                     <img
