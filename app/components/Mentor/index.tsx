@@ -43,10 +43,8 @@ export default function WhyAbtec() {
         <h2 className="lh-82 text-midnightblue flex gap-2 text-4xl md:text-55xl text-center md:text-start font-semibold">
           Porquê escolher a
           <img
-            className="block object-cover md:h-20 md:w-20 shadow-md shadow-blue-500 rounded-full"
+            className="block object-cover max-md:h-20 max-md:w-20 md:h-20 md:w-20 shadow-md rounded-full"
             src={"/assets/abtec_logo.jpg"}
-            height={60}
-            width={60}
             alt="dsign-logo"
           />{" "}
           ?{" "}
