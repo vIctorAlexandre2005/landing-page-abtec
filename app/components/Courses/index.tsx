@@ -54,17 +54,16 @@ const postData: DataType[] = [
 // CAROUSEL SETTINGS
 
 export default function MultipleItems() {
-
   return (
     <div id="courses">
       <div className="mx-auto max-w-7xl sm:py-8 px-4 lg:px-8 ">
         <div className="sm:flex justify-between items-center">
-          <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">
+          <h3 className="text-midnightblue max-md:mt-10 text-4xl lg:text-55xl font-semibold md:mb-5 sm:mb-0">
             Nossos serviços
           </h3>
         </div>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid max-md:grid-cols-1 md:grid-cols-3 gap-4">
           {postData.map((items, i) => (
             <div key={i}>
               <div className="bg-white m-3 px-3 pt-3 pb-12 my-20 shadow-courses rounded-2xl">

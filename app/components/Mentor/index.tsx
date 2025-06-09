@@ -52,7 +52,7 @@ export default function WhyAbtec() {
           ?{" "}
         </h2>
 
-        <div className="grid grid-cols-3">
+        <div className="grid max-md:grid-cols-1 md:grid-cols-3">
         {postData.map((items, i) => (
           <div key={i} className="">
             <div className="m-3 py-14 md:my-10 text-center">

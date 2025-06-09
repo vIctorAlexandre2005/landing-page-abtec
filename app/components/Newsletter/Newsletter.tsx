@@ -12,9 +12,8 @@ const Newsletter = () => {
               <h3 className="text-4xl md:text-55xl text-center font-semibold text-white mb-3">
                 Agende um diagnóstico gratuito
               </h3>
-              <h3 className="text-base font-normal opacity-75 text-white text-center mb-8">
-                Seu computador não pode esperar. Traga agora mesmo para a gente
-                dar um jeito!
+              <h3 className="text-lg font-normal opacity-75 p-4 text-white text-center mb-8">
+                Seu computador não pode esperar. Traga agora mesmo para darmos um jeito!
               </h3>
 
               <div>

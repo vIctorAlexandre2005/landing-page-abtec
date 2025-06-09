@@ -9,7 +9,7 @@ import WhyAbtec from './components/Mentor/index';
 
 export default function Home() {
   return (
-    <main>
+    <main className='overflow-x-hidden'>
       <Banner />
       {/* <Companies /> */}
       <Courses />

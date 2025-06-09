@@ -62,7 +62,7 @@ const Navbar = () => {
 
               <div className="flex flex-shrink-0 items-center">
                 <img
-                  className="block object-cover md:h-20 md:w-20 shadow-md shadow-blue-500 rounded-full"
+                  className="block object-cover max-md:h-16 max-md:w-16 md:h-20 md:w-20 shadow-md shadow-blue-500 rounded-full"
                   src={"/assets/abtec_logo.jpg"}
                   alt="dsign-logo"
                 />

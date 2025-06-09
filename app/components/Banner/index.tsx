@@ -1,18 +1,16 @@
-import Image from "next/image";
-import { MdOutlineWhatsapp, MdWhatsapp } from "react-icons/md";
 import { CheckBadgeIcon } from "@heroicons/react/24/outline";
 import { whatsappLink } from "../Footer/Footer";
 
 export function Banner() {
   return (
-    <div id="banner" className="bg-blue-400 w-full">
-      <div className="mx-auto pt-10 max-w-full w-full sm:pb-24 px-6">
+    <div id="banner" className="bg-blue-400 w-full p-2">
+      <div className="mx-auto pt-10 w-full sm:pb-24">
         <div className="grid grid-cols-1 w-full lg:grid-cols-12 gap-12 space-x-1">
-          <div className="col-span-6 w-full flex flex-col justify-evenly">
+          <div className="col-span-6 max-lg:gap-6 w-full flex flex-col justify-evenly">
             <h1 className="text-midnightblue text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-120 pt-5 lg:pt-0">
               Seu dispositivo com problema? A gente resolve!
             </h1>
-            <h3 className="text-charcoal text-lg font-normal text-center lg:text-start opacity-75 lg:pt-0">
+            <h3 className="text-charcoal text-xl font-normal text-center lg:text-start opacity-75 lg:pt-0">
               Manutenção rápida, confiável e com garantia para PCs, notebooks e
               acessórios.
             </h3>
@@ -27,20 +25,21 @@ export function Banner() {
               </a>
             </div>
 
-            <div className="flex w-full items-center justify-between lg:pt-4">
-              <div className="flex w-full items-center text-white gap-2">
-                <CheckBadgeIcon className="w-10 h-10" />{" "}
-                <p className="text-sm w-full sm:text-lg font-semibold text-black">
-                  Preço justo
-                </p>
-              </div>
-              <div className="flex w-full items-center text-white gap-2">
+            <div className="flex w-full items-center gap-2 justify-around lg:pt-4">
+              <div className="flex items-center text-white gap-2">
                 <CheckBadgeIcon className="w-10 h-10" />
                 <p className="text-sm w-full sm:text-lg font-semibold text-black">
                   Excelência técnica
                 </p>
               </div>
-              <div className="flex w-full items-center text-white gap-2">
+              
+              <div className="flex items-center text-white gap-2">
+                <CheckBadgeIcon className="w-10 h-10" />
+                <p className="text-sm w-full sm:text-lg font-semibold text-black">
+                  Preço justo
+                </p>
+              </div>
+              <div className="flex items-center text-white gap-2">
                 <CheckBadgeIcon className="w-10 h-10" />
                 <p className="text-sm w-full sm:text-lg font-semibold text-black">
                   Fácil e seguro
@@ -50,12 +49,12 @@ export function Banner() {
           </div>
 
           <div className="col-span-6 flex justify-center">
-            <Image
+            <img
               src="/assets/propaganda_4.jpg"
               alt="nothing"
-              className="object-cover rounded-2xl shadow-lg shadow-blue-500"
-              width={1000}
-              height={805}
+              className="object-cover max-sm:-mt-8 max-lg:h-full max-lg:w-3/4 rounded-2xl shadow-lg shadow-blue-500"
+              /* width={1000}
+              height={805} */
             />
           </div>
         </div>
