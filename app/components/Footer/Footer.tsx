@@ -19,7 +19,7 @@ interface socialLinks {
 }
 
 const message = "Olá! Gostaria de um atendimento técnico da ABTEC.";
-export const whatsappLink = `https://api.whatsapp.com/send?phone=5521988774292&text=${encodeURIComponent(message)}`;
+export const whatsappLink = `https://api.whatsapp.com/send?phone=5521980913418&text=${encodeURIComponent(message)}`;
 
 const socialLinks: socialLinks[] = [
   {
@@ -30,7 +30,7 @@ const socialLinks: socialLinks[] = [
   {
     imgSrc:
       "https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000",
-    link: "https://www.instagram.com/abtecrj/",
+    link: "https://www.instagram.com/abtec.rj/",
     width: 28,
   },
 ];
