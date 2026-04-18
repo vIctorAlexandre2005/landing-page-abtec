@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ABTEC - Assistência Técnica em Informática
 
-## Getting Started
+Esta é a landing page oficial da **ABTEC**, uma empresa especializada em assistência técnica de informática. O projeto foi desenvolvido para apresentar os serviços da empresa, destacar seus diferenciais e facilitar o contato com clientes.
 
-First, run the development server:
+## 🚀 Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+O projeto foi construído utilizando as seguintes tecnologias:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js (v13.4.2)**: Framework React com suporte a App Router para uma navegação otimizada e SEO aprimorado.
+- **TypeScript**: Para garantir a tipagem estática e maior segurança no desenvolvimento.
+- **Tailwind CSS**: Framework CSS utilitário para um design responsivo e moderno.
+- **Headless UI**: Componentes de interface acessíveis e sem estilo pré-definido.
+- **React Slick**: Utilizado para carrosséis e sliders interativos.
+- **Heroicons & React Icons**: Bibliotecas de ícones de alta qualidade.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Design Responsivo**: Adaptado para dispositivos móveis, tablets e desktops.
+- **Seção de Serviços**: Listagem detalhada dos serviços oferecidos (Formatação, troca de peças, reparo de notebooks, etc.).
+- **Por que a ABTEC?**: Seção destacando os diferenciais competitivos como atendimento rápido, 90 dias de garantia e equipe especializada.
+- **Depoimentos**: Prova social com avaliações de clientes satisfeitos.
+- **Newsletter**: Sistema de captura de e-mails para novidades e promoções.
 
-## Learn More
+## 🛠️ Instalação e Execução
 
-To learn more about Next.js, take a look at the following resources:
+Para rodar o projeto localmente, siga os passos abaixo:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/vIctorAlexandre2005/landing-page-abtec.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-## Deploy on Vercel
+3. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Acesse no navegador:**
+   Abra [http://localhost:3000](http://localhost:3000) para ver o resultado.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📁 Estrutura do Projeto
+
+- `/app`: Contém as rotas e a lógica principal utilizando o Next.js App Router.
+- `/app/components`: Componentes reutilizáveis da interface (Navbar, Footer, Banner, etc.).
+- `/public`: Arquivos estáticos como imagens e ícones.
+- `/assets`: Recursos visuais utilizados nos componentes.
+
+---
+Desenvolvido por [Victor Alexandre](https://github.com/vIctorAlexandre2005)
